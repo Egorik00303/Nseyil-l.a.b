@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nseyil | Soft & Windows</title>
+    <style>
+        :root {
+            --bg-color: #0b0514;
+            --card-bg: #160d27;
+            --accent-color: #9d4edd;
+            --text-color: #e0d1ff;
+            --hover-color: #c77dff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at top right, #1a0b35, transparent);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            text-shadow: 0 0 15px rgba(157, 78, 221, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            margin: 30px 0 20px;
+            color: white;
+        }
+
+        /* Сетка карточек */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--hover-color);
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #b1a2cc;
+        }
+
+        .btn-download {
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-top: 15px;
+        }
+
+        .btn-download:hover {
+            background: var(--hover-color);
+            box-shadow: 0 0 10px var(--accent-color);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #5a4a75;
+        }
+
+        /* Метка для Windows */
+        .win-tag {
+            font-size: 0.7rem;
+            background: #3c096c;
+            padding: 3px 8px;
+            border-radius: 5px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nseyil L.A.B</h1>
+        <p>Полезный софт и оптимизированные сборки систем</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Секция Программ -->
+        <div class="section-title">Полезные программы</div>
+        <div class="grid">
+            <div class="card">
+                <h3>VS Code</h3>
+                <p>Лучший редактор кода для Python и веб-разработки. Темы, плагины, терминал.</p>
+                <a href="https://code.visualstudio.com/download" class="btn-download">Скачать</a>
+            </div>
+            <div class="card">
+                <h3>Python 3.x</h3>
+                <p>Среда разработки для твоих проектов и ботов. Необходима для работы стартапов.</p>
+                <a href="https://www.python.org/downloads/" class="btn-download">Скачать</a>
+            </div>
+            <div class="card">
+                <h3>Telegram Desktop</h3>
+                <p>Мессенджер для управления твоими ботами и каналами прямо с ПК.</p>
+                <a href="https://desktop.telegram.org/" class="btn-download">Скачать</a>
+            </div>
+        </div>
+
+        <!-- Секция Windows -->
+        <div class="section-title">Сборки Windows</div>
+        <div class="grid">
+            <div class="card">
+                <span class="win-tag">Light</span>
+                <h3>Windows 10 Pro Lite</h3>
+                <p>Вырезана телеметрия, лишние службы и защитник. Идеально для слабых ПК и гейминга.</p>
+                <a href="https://t.me/NseyilTex" class="btn-download">СКОРО</a>
+            </div>
+            <div class="card">
+                <span class="win-tag">Full</span>
+                <h3>Windows 11 Custom</h3>
+                <p>Версия с предустановленным софтом, драйверами и фиолетовой темой оформления.</p>
+                <a href="https://t.me/NseyilTex" class="btn-download">СКОРО</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Nseyil Projects. Сделано с любовью к коду. Telegram https://t.me/NseyilTex.
+    </footer>
+
+</body>
+</html>
